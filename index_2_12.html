@@ -1,0 +1,36 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSSスタイルの継承</title>
+        <style>
+            .test1{
+                border: solid 2px red;
+                border-width: 5px;
+                width: 500px;
+            }
+
+            .test2{
+                border: solid 2px yellow;
+                border-width: 5px;
+                margin-left: 20px;
+            }
+
+            .test3{
+                border: solid 2px green;
+                border-width: 5px;
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="test1">
+            継承テスト1
+            <div class="test2">
+                継承テスト2
+                <div class="test3">
+                    継承テスト3
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
