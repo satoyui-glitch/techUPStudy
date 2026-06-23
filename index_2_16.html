@@ -1,0 +1,64 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>要素を絶対配置する</title>
+        <style>
+            .one-box{
+                position: relative;
+                width: 80%;
+                height: 200px;
+                background-color: rgb(245, 202, 209);
+                padding: 20px;
+            }
+
+            .text1{
+                position: absolute;
+                font-size: 20px;
+                color: black;
+                top: 1px;
+                left: 3px;
+            }
+
+            .two-box{
+                position: absolute;
+                width: 400px;
+                height: 150px;
+                background-color: rgb(0, 204, 255);
+                z-index: 1;
+
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+            .three-box{
+                position: absolute;
+                width: 300px;
+                height: 100px;
+                background-color: rgb(247, 58, 234);
+                z-index: 2;
+
+                color: white;
+                font-size: 40px;
+                font-family: "メイリオ";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%)
+            }
+        </style>
+    </head>
+    <body>
+        <div class="one-box">
+            <div class="text1">背景表示</div>
+                <div class="two-box">
+                    <div class="three-box">
+                        ロゴ表示
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
