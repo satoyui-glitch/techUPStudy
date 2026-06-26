@@ -1,0 +1,39 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>属性セレクターを使う</title>
+        <style>
+            body{
+                color: white;
+            }
+            
+            .box{
+                background-color: #ffebe9;
+                border-top: 8px solid #ff7d6e;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.419);
+                margin: 10px;
+                padding: 20px;
+            }
+
+            .text p{
+                color: #ff7d6e;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+
+            <div class="text">
+                <p>このような影（box-shadow）をつけて少し浮いたように見せた枠を作成してください。<br>
+                背景は白<br>
+                ミント風の配色は、#ffebe9<br>
+                トップのボーダ色は、#ff7d6e<br>
+                文字色は、#ff7d6e<br>
+                子孫セレクターをつかって<br>
+                marginを10px<br>
+                paddingを20px<br>
+                で設定してください。</p>
+            </div>
+        </div>
+    </body>
+</html>
