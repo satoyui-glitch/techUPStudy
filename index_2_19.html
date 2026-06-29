@@ -1,0 +1,64 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>フレックスボックス</title>
+        <style>
+            body{
+                min-width: 380px;
+            }
+
+            header{
+                background-color: palevioletred;
+                height: 50px;
+                text-align: center;
+            }
+
+            .test1{
+                display: flex;
+            }
+
+            .test2{
+                background-color: lightgreen;
+                width: 16px;
+                height: 400px;
+            }
+
+            .test3{
+                flex: 1;
+                height: 400px;
+                text-align: center;
+            }
+
+            .test4{
+                background-color: lightgreen;
+                width: 16px;
+                height: 400px;
+            }
+
+            footer{
+                background-color: khaki;
+                height: 80px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            header
+        </header>
+
+        <div class="test1">
+            <div class="test2">
+            </div>
+            <div class="test3">
+                contentA
+            </div>
+            <div class="test4">
+            </div>
+        </div>
+
+        <footer>
+            footer
+        </footer>
+    </body>
+</html>
