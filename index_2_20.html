@@ -1,0 +1,35 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>画像の配置</title>
+        <style>
+            .class1{
+                background: url(https://techup.tokyo/wp-content/uploads/2021/12/image2.jpg) no-repeat 0 0;
+                background-size: cover;
+                position: relative;
+                margin: 0 ;
+                text-align: left;
+                width: 750px;
+                height: 500px;
+            }
+
+            .class2{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .class2 img{
+                width: 250px;
+                height: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="class1">
+            <div class="class2">
+                <img src="https://techup.tokyo/wp-content/uploads/2021/12/image1.jpg">
+            </div>
+        </div>
+    </body>
+</html>
