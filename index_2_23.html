@@ -1,0 +1,80 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>グリッドの設定</title>
+        <style>
+            .grid-cont{
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: auto;
+            }
+
+            .head{
+                background: #0000ff;
+                grid-column-start: 1;
+                grid-column-end: 7;
+            }
+
+            .cont1{
+                background: #00ff00;
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            .cont2{
+                background: #ff0000;
+                grid-column-start: 4;
+                grid-column-end: 7;
+            }
+
+            .cont3-1{
+                background: #00ffff;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+            .cont3-2{
+                background: white;
+                grid-column-start: 3;
+                grid-column-end: 5;
+            }
+
+            .cont3-3{
+                background: #ffff00;
+                grid-column-start: 5;
+                grid-column-end: 7;
+            }
+
+            .cont4-1{
+                background: purple;
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            .cont4-2{
+                background: #ff00ff;
+                grid-column-start: 4;
+                grid-column-end: 7;
+            }
+
+            .food{
+                background: brown;
+                grid-column-start: 1;
+                grid-column-end: 7;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="grid-cont">
+        <div class="head">herder</div>
+        <div class="cont1">content-1</div>
+        <div class="cont2">content-2</div>
+        <div class="cont3-1">content3-1</div>
+        <div class="cont3-2">content3-2</div>
+        <div class="cont3-3">content3-3</div>
+        <div class="cont4-1">content4-1</div>
+        <div class="cont4-2">content4-2</div>
+        <div class="food">fooder</div>
+      </div>
+    </body>
+</html>
