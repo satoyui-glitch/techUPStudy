@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +20,37 @@
 
 </head>
 <body id="top_page">
-	<header><a href="#">
-		<p><img src="./image/header_link.png" alt="「お茶のある生活を豊かにするギフト」キャンペーン応募者全員にプレゼント!"></p>
-	</a>
-</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#top">トップ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">概要</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#purpose">目的</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">お問い合わせ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <div class="main_img">
+	<section id="top">
 	<h1><img src="./image/main.jpg" alt="プーアル古樹茶専門ブランド 株式会社木の舟"></h1>
+	</section>
 </div>
 
 <div class="introArea main">
@@ -65,6 +90,7 @@
 <div class="cam_bnr">
 	<p class="main"><a href="#"><img src="./image/cam_bnr2.png" alt="キャンペーン応募者全員にプレゼント!豪華特典はこちら"></a></p>
 </div>
+<section id="about">
 <div class="kodawari_content">
 	<div class="kodawari_title">
 		<p>私たちは、日本国内はもちろん、台湾、韓国へも赴き、より良いプーアル茶を探してきました。<br>
@@ -85,8 +111,9 @@
 	<div class="koda kodawari04">
 		<h2><img src="./image/koda04.jpg" alt="四、安心と信頼へのこだわり"></h2>
 	</div>
+</div>
+</section>
 
-</div><!--kodawari_content-->
 <div class="tyaba_content">
 	<div class="tyaba_title">
 		<p>プーアル茶には、加工方法により「熟茶」と「生茶」に分けられます。<br>
@@ -162,6 +189,7 @@
 <div class="cam_bnr">
 <p class="main"><a href="#"><img src="./image/cam_bnr2.png" alt="キャンペーン応募者全員にプレゼント!豪華特典はこちら"></a></p>
 </div>
+<section id="purpose">
 <div class="bunka_content">
 <div class="bunka_title">
 	<h3><img src="./image/bunka_title.png" alt="プーアル茶の味わい、香り、そして文化を体感してみてください"></h3>
@@ -205,7 +233,9 @@
 			<div class="ph"><img src="./image/taikan_ph02.jpg" alt="茶畑"></div>
 		</div>
 	</div>
-</div><!--bunka_content-->
+</div>
+</section>
+
 <div class="voice_content">
 	<div class="voive_title">
 		<h3><img src="./image/voice_tit.png" alt="お客様の声"></h3>
@@ -266,6 +296,7 @@
 		</div>
 	</div>
 </div>
+<section id="contact">
 <div class="contact_link">
 	<div class="naiyou">
 		<p>ホテルや旅館、店舗での提供をご検討の方は下記よりお問い合わせください。<br>※当ページのキャンペーンフォームからでも問題ございません。</p>
@@ -275,6 +306,7 @@
 		</div>
 	</div>
 </div>
+</section>
 <div class="present_label">
 	<p><img src="./image/present_link.png" alt="キャンペーン応募者全員にプレゼント!"></p>
 </div>
