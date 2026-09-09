@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+  <title>関数定義</title>
+</head>
+<body>
+  <script>
+    alert("XXを関数で確認します");
+
+    function checkFour(num){
+      if (num >= 4) {
+        console.log('値は4以上です。');
+      }else{
+        console.log('値は4未満です。');
+      }
+    }
+
+    function checkTen(num){
+      if(num >= 10){
+        console.log('値は10以上です。');
+      }else{
+        console.log('値は10未満です。');
+      }
+    }
+
+    let number = 5;
+
+    checkFour(number);
+    checkTen(number);
+  </script>
+</body>
+</html>
