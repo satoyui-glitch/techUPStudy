@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+  <title>要素の変更</title>
+</head>
+<body>
+  <script>
+    const users = ['山田さん','佐藤さん','内田さん'];
+
+    console.log('最初に配列の値を表示します。');
+    for (let i = 0; i < users.length; i++){
+      console.log(users[i]);
+    }
+
+    while (users.length > 0){
+      const removedUser = users.shift();
+      console.log('配列の値を1つ消します。');
+      console.log(removedUser + 'を消しました。');
+
+      if (users.length !==0){
+        console.log('残りを表示します。');
+        for(let i = 0; i < users.length; i++){
+          console.log(users[i]);
+        }
+      }else{
+        console.log("データがなくなりました。");
+      }
+    }
+  </script>
+</body>
+</html>
