@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+  <title>メソッドやクラスを使う</title>
+</head>
+<body>
+  <script>
+    function Who(name){
+      this.name = name;
+    }
+
+    Who.prototype.getName = function(){
+      return this.name;
+    }
+
+    const who = new Who('tanaka');
+
+    console.log(who.getName());
+  </script>
+</body>
+</html>
