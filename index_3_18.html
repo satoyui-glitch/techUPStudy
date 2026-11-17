@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="Ja">
+<head>
+  <meta charset="utf-8">
+  <title>フォームの操作を理解しよう！</title>
+</head>
+<body>
+  <form>
+    <input type='text' id="counter" value="0">
+    <button type="button" onclick="incrementValue()">ボタン</button>
+  </form>
+
+  <script>
+    function incrementValue(){
+      let inputField = document.getElementById("counter");
+
+      let currentValue = parseInt(inputField.value, 10);
+      if (isNaN(currentValue)){
+        currentValue = 0;
+      }
+
+      inputField.value = currentValue + 1;
+    }
+  </script>
+</body>
+</html>
