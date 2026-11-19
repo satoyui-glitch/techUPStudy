@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="Ja">
+<head>
+  <meta charset="utf-8">
+  <title>CanvasAPIを利用しよう！</title>
+</head>
+<body>
+  <canvas id="Canvas" width="400" height="400"></canvas>
+
+  <script>
+    const canvas = document.getElementById("Canvas");
+    const ctx = canvas.getContext("2d");
+
+    const x = 150;
+    const y = 150;
+    const radius = 80;
+
+    function toRadian(deg){
+      return deg * Math.PI / 180;
+    }
+
+    ctx.beginPath();
+
+    ctx.arc(x,y,radius,toRadian(1),toRadian(270));
+
+    ctx.stroke();
+  </script>
+</body>
+</html>
