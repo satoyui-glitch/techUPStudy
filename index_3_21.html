@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="Ja">
+<head>
+  <meta charset="utf-8">
+  <title>CanvasAPIを利用しよう！</title>
+</head>
+<body>
+  <h1>Canvasでアニメーションを描く</h1>
+  <p>図形を表示するには、canvasタグをサポートしたブラウザが必要です。</p>
+
+  <canvas id = "Canvas" width="400" height="400"></canvas>
+
+  <script>
+    var canvas = document.getElementById("Canvas");
+    var ctx = canvas.getContext("2d");
+    var image = new Image();
+    var imageUrl = "https://techup.tokyo/wp-content/uploads/2022/05/gosticon.png";
+    
+    image.onload = function(){
+      var width = canvas.width;
+      var height = canvas.height;
+
+      var centerX = width / 2;
+      var centerY = height / 2;
+
+      var radius = 150;
+      var angle = 0;
+
+      var imgWidth = 50;
+      var imgHeight = 50;
+
+      function animate(){
+        ctx.clearRect(0, 0, width, height);
+
+        var x = centerX + Math.cos(angle) * radius;
+        var y = centerY + Math.sin(angle) * radius;
+        ctx.drawImage(image, x - imgWidth / 2, y - imgHeight / 2, imgWidth, imgHeight);
+
+        angle += 0.05;
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    };
+
+    image.src = imageUrl;
+  </script>
+</body>
+</html>
